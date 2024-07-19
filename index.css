@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navigation{
+    background-color: #ff7171;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+}
+nav ul li a img{
+    height: 30px;
+    vertical-align: middle;
+}
+.division_items_lists{
+    display: none;
+}
+#page_one{
+    display: flex;
+    height: 635px;
+}
+.first_layout{
+    padding: 80px 90px;
+    background: linear-gradient(to right, #fff6ad, #ffd1d2);
+    display: flex;
+    align-items: center;
+}
+.inside_first_layout{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+.first_layout h1{
+    font-size: 45px;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+}
+.first_layout P{
+    font-family: sans-serif;
+    line-height: 25px;
+    font-size: 19px;
+}
+.first_layout button{
+    background-color: #ff7171;
+    color: white;
+    padding: 20px;
+    border: none;
+    width: 250px;
+}
+.second_layout img{
+    height: 635px;
+    width: 765px;
+}
+
+/* page 2 of pdf starts from here */
+
+#page_two{
+    background: linear-gradient(to right, #ffefb5, #ffacf7);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    height: 690px;
+    padding-left: 10%;
+}
+#page_two .division_one img{
+    height: 240px;
+    width: 270px;
+}
+#page_two .division_one{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#page_two .division_two img{
+    height: 485px;
+    width: 270px;
+}
+#page_two .division_three{
+    margin-left: 2%;
+}
+.sub_division_three{
+    background-color: #ff7171;
+    font-family: sans-serif;
+    padding: 30px 40px;
+}
+.sub_division_three h1{
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+.sub_division_three .same_line, .same_line_img{
+    display: inline;
+}
+.sub_division_three .same_line_img{
+    vertical-align: middle;
+}
+
+@media (min-width: 769px) and (max-width: 1366px) {
+    *{
+        font-size: 13px;
+    }
+    .second_layout img{
+        height: 707px;
+        width: 549px;
+    }
+    .first_layout{
+        padding: 92px 75px;
+        height: 707px;
+    }
+    .first_layout h1{
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+    .first_layout P{
+        font-size: 15px;
+    }
+    .first_layout button{
+        padding: 18px;
+        width: 175px;
+    }
+    #page_two{
+        gap: 17px;
+        height: 768px;
+        padding-left: 4%;
+        margin-top: 7%;
+    }
+    #page_two .division_one img{
+        height: 190px;
+        width: 242px;
+    }
+    #page_two .division_two img{
+        height: 387px;
+        width: 243px;
+    }
+    .sub_division_three{
+        padding: 9px;
+    }
+    .sub_division_three h1{
+        letter-spacing: 3px;
+        font-size: 53px;
+    }
+}
+/* Media query for tablets */
+@media (min-width: 600px) and (max-width: 900px) {
+    nav ul li a{
+        font-size: 13px;
+    }
+    #page_one{
+        height: 800px;
+        flex-direction: column;
+    }
+    .first_layout{
+        padding: 30px 90px;
+    }
+    .second_layout img{
+        margin-top: 50px;
+        height: 400px;
+        width: 750px;
+    }
+    .second_layout{
+        background: linear-gradient(to right, #fff6ad, #ffd1d2);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    #page_two{
+        height: 900px;
+        padding-left: 13%;
+        margin-top: 15%;
+        padding-top: 6%;
+    }
+    .sub_division_three{
+        margin-top: -8%;
+    }
+}
+
+/* Media query for 4K resolution laptops */
+@media (min-width: 1920px) and (min-height: 1080px) and (min-resolution: 2dppx) {
+    nav ul li{
+        margin: 10px 70px;
+    }
+    #page_one{
+        height: 800px;
+    }
+    .second_layout img{
+        height: 800px;
+        width: 1200px;
+    }
+    #page_two{
+        justify-content: center;
+        gap: 50px;
+        height: 800px;
+    }
+    #page_two .division_one img{
+        height: 300px;
+        width: 310px;
+    }
+    #page_two .division_one{
+        gap: 30px;
+    }
+    #page_two .division_two img{
+        height: 620px;
+        width: 350px;
+    }
+    .sub_division_three{
+        padding: 80px 110px;
+    }
+}
+/* Media query for mobile devices */
+@media (min-width: 320px) and (max-width: 480px) {
+    .big_screen{
+        display: none;
+    }
+    .small_screen{
+        display: block;
+    }
+    #page_one{
+        height: 800px;
+        flex-direction: column;
+    }
+    .first_layout{
+        padding: 30px 40px;
+    }
+    .first_layout h1{
+        font-size: 25px;
+    }
+    .second_layout img{
+        height: 300px;
+        width: 300px;
+    }
+    .second_layout{
+        background: linear-gradient(to right, #fff6ad, #ffd1d2);
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+
+
+    #page_two{
+        flex-direction: column;
+        gap: 30px;
+        height: 1250px;
+        margin-top: 0;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #page_two .division_one{
+        gap: 20px;
+    }
+    #page_two .division_two img{
+        height: 400px;
+    }
+    .sub_division_three{
+        padding: 15px 25px;
+    }
+    .sub_division_three h1{
+        letter-spacing: 5px;
+        font-size: 22px;
+    }
+    .sub_division_three .same_line, .same_line_img{
+        display: inline;
+    }
+    .sub_division_three .same_line_img{
+        vertical-align: middle;
+    }
+
+
+
+
+    .division_items_lists {
+        position: absolute;
+        top: 100%;
+        background-color: white;
+    }
+    .see_division:hover .division_items_lists {
+        display: block;
+    }
+    .division_items_lists li {
+        padding: 10px;
+    }
+    .division_items_lists li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+    .items_icon {
+        width: 24px;
+        height: 24px;
+    }
+    #navigation {
+        position: relative;
+    }
+}
